@@ -20,6 +20,6 @@ const getUserById = ( id, callback ) => {
 }
 
 
-module.exports = {
+export default {
   getUserById,
 }

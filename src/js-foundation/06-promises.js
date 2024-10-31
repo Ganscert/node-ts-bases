@@ -1,26 +1,11 @@
-import { http } from '../plugins';
-
-const getPokemonById = async( id ) => {
-  const url = `https://pokeapi.co/api/v2/pokemon/${ id }`;
-
-  const pokemon = await http.get( url );
-
-  // const resp = await fetch( url );
-  // const pokemon = await resp.json();
+import { httpClientPlugin } from "../plugins/http-client.plugin.js";
 
 
-  // throw new Error('Pokemon no existe');
+export const getPokemonById = async (id) => {
+  const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+  const pokemon = await httpClientPlugin.get(url);
   
-  return pokemon.name;
-  
-  // return fetch( url )
-  //   .then( ( resp ) => resp.json())
-  //   // .then( () => { throw new Error('Pokemon no existe') })
-  //   .then( ( pokemon ) => pokemon.name );
-
-}
+  console.log( pokemon.name) 
+};
 
 
-
-
-export default getPokemonById;

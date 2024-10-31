@@ -9,6 +9,6 @@ const emailTemplate = `
 
 
 
-module.exports = {
+export default {
   emailTemplate
 }

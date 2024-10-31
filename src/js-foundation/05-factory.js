@@ -26,6 +26,6 @@ const buildMakePerson = ({ getUUID, getAge }) => {
 // console.log(john);
 
 
-module.exports = {
+export default {
   buildMakePerson,
 }
