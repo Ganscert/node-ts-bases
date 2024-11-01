@@ -4,7 +4,6 @@
   "description": "Esta es mi primera aplicación real de Node",
   "main": "app.js",
   "type": "module",
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node --watch src/app.js",
@@ -12,15 +11,13 @@
     "start:dev": "echo 'Hola mundo desde dev' ",
     "start:stag": "echo 'Hola mundo desde dev' "
   },
-  "author": "Fernando Herrera",
+  "author": "Emmanuel Cruz",
   "license": "MIT",
   "devDependencies": {
-    "nodemon": "^3.0.1"
-  },
-  "dependencies": {
-    "axios": "^1.4.0",
+    "axios": "^1.7.7",
     "get-age": "^1.0.1",
-    "uuid": "^9.0.0",
+    "nodemon": "^3.0.1",
+    "uuid": "^11.0.2",
     "winston": "^3.15.0"
   }
 }
