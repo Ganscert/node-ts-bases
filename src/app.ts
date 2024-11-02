@@ -1,24 +1,7 @@
-const heroes=[
-   {
-      id:1,
-      name: 'ironman',
-      owner: 'marvel'
-   },
-   {
-      id:2,
-      name: 'spiderman',
-      owner:'marvel'
-   },
-   {
-      id:3,
-      name:'batman',
-      owner:'dc'
-   }
-]
+import { findheroe } from "./services/heroes.service"
 
-const findheroe=(id:number)=>{
-   return heroes.find(heroe => heroe.id===id)
-}
+
+
 
 const hero=findheroe(1)
 
